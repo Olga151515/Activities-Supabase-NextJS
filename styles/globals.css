@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-control {
+       @apply bg-neutral-100 text-neutral-700 dark:bg-neutral-900 outline-teal-300
+            shadow-sm border dark:border-neutral-600 dark:text-neutral-50 py-2 px-3
+            dark:outline-neutral-800 
+    }
+    .data-table {
+        @apply border-collapse w-full
+    }
+    th {
+        @apply py-3 px-2 text-left
+    }
+    td {
+        @apply p-2 
+    }
+    td, th {
+        @apply border border-black dark:border-white border-opacity-20
+    }
+    .nav-link {
+        @apply py-2 px-3 rounded-none transition-colors text-white dark:text-neutral-900
+        hover:text-amber-300  dark:hover:text-blue-800
+    }
+    .nav-link.active {
+        @apply underline
+    }
+}
